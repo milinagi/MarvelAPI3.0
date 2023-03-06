@@ -16,6 +16,9 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.marvelapi30.components.CharacterCardView
 import com.example.marvelapi30.model.MarvelDb
+import com.example.marvelapi30.modelMarvel.MarvelDbClient
+import com.example.marvelapi30.modelMarvel.MarvelDbResult
+import com.example.marvelapi30.modelMarvel.MarvelDbService
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
@@ -41,3 +44,8 @@ fun CharactersScreen(navController: NavController) {
 fun CharacterBodyContent() {
     CharacterCardView(MarvelDb.getAllCharacters())
 }
+//
+//@Composable
+//fun CharacterBodyContent() {
+//    CharacterCardView(MarvelDbClient.getAllCharacters)
+//}
